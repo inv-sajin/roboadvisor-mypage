@@ -1,289 +1,499 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Robo Advisor</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="css/style.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robo Advisor</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="css/style.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
-<nav class="nav">
-  <div class="container p-0">
-    <nav class="navbar navbar-expand-lg navbar-light navbr">
-      <div class="container-fluid" style="padding: 0; margin: 0px;"> 
-        <!-- Left Side Logo/Brand --> 
-        <a class="navbar-brand" href="index.html">
-        <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
-        </a> 
-        
-        <!-- Mobile Toggle Button with Custom Animation -->
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        
-        <!-- Navigation Menu Items -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          </ul>
-          
-          <!-- Right Side Menu Items -->
-          <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
-            <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link" href="#">入出金</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link" href="#">ポートフォリオ</a> </li>
-            <li class="nav-item"> <a class="nav-link px-3" href="profile1.html">プロファイル</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link" href="#">その他</a> </li>
-          </ul>
+  <nav class="nav">
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-lg navbar-light navbr">
+        <div class="container-fluid" style="padding: 0; margin: 0px;">
+          <!-- Left Side Logo/Brand -->
+          <a class="navbar-brand" href="index.html">
+            <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
+          </a>
+
+          <!-- Mobile Toggle Button with Custom Animation -->
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+              class="icon-bar"></span> </button>
+
+          <!-- Navigation Menu Items -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+
+            <!-- Right Side Menu Items -->
+            <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
+              <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="#">入出金</a> </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="portfolio1-2.html">ポートフォリオ</a> </li>
+              <li class="nav-item"> <a class="nav-link px-3" href="profile1.html">プロファイル</a> </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="#">その他</a> </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-</nav>
-<div class="menu-bottom-line"></div>
-<div class="container">
-  <div class="inner-container">
-    <div class="breadcrumb_head-dbline fw-bold f-size16 mt-3">プロファイル</div>
-	  <div class="pt-4 pb-5 f-size12">基本情報の編集と追加情報の編集はこちらから</div>
-    <section>
-      <ul class="nav nav-pills mb-3 border-bottom border-2 mt-3" id="pills-tab" role="tablist">
-        <li class="nav-item tab_btn_size50" role="presentation">
-          <button class="nav-link fw-semibold active position-relative f-size14" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">資産の推移</button>
-        </li>
-        <li class="nav-item tab_btn_size50 f-size14" role="presentation">
-          <button class="nav-link  fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">資産の割合</button>
-        </li>
-       
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      </nav>
+    </div>
+  </nav>
+  <div class="menu-bottom-line"></div>
+  <div class="container">
+    <div class="inner-container">
+      <div class="breadcrumb_head-dbline fw-bold f-size16 mt-3">プロファイル</div>
+      <div class="pt-4 pb-5 f-size12">基本情報の編集と追加情報の編集はこちらから</div>
+      <section>
+        <ul class="nav nav-pills mb-3 border-bottom border-2 mt-3" id="pills-tab" role="tablist">
+          <li class="nav-item tab_btn_size50" role="presentation">
+            <button class="nav-link fw-semibold active position-relative f-size14" id="pills-home-tab"
+              data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+              aria-selected="true">資産の推移</button>
+          </li>
+          <li class="nav-item tab_btn_size50 f-size14" role="presentation">
+            <button class="nav-link  fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">資産の割合</button>
+          </li>
+
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+
+
+            <a href="#" class="alink">
+              <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                <div><span class="numbering">1</span><span class="txtpos2 f-size12 left_title">生年月日</span></div>
+                <div class="f-size14 lightgreytxt">1994/5/25 <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span></div>
+              </div>
+            </a>
+            
+
+
+            <a href="#" class="alink">
+              <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                <div><span class="numbering">2</span><span class="txtpos2 f-size12 left_title">性別</span></div>
+                <div class="f-size14 lightgreytxt">男 <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span></div>
+              </div>
+            </a>
+
+    
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">3</span>
+                  <span class="txtpos2 f-size12 left_title">職業</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      会社員
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">会社員</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">自営業</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">ビジネスマン</a></li>
+                    </ul>
+                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">4</span>
+                  <span class="txtpos2 f-size12 left_title">年収</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      600万円
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">500万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">600万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">700万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">800万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">900万円以上</a></li>
+                    </ul>
+                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">5</span>
+                  <span class="txtpos2 f-size12 left_title">金融資産</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      6000万円
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">5000万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">6000万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">7000万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">8000万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">9000万円以上</a></li>
+                    </ul>
+                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">6</span>
+                  <span class="txtpos2 f-size12 left_title">家族構成</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      独身、子供あり
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">シングル</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">既婚</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin"> 独身、子供あり</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">結婚、子供あり</a></li>
+                    </ul>
+                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">1</span>
+                  <span class="txtpos2 f-size12 left_title">引退年齢</span>
+                </div>
+                <div class="f-size14">
+                  <input type="month" id="retirementDate" class="datepicker" value="2065-03"
+                    style="border: none; outline: none; box-shadow: none; text-align: center;">
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">2</span>
+                  <span class="txtpos2 f-size12 left_title">年金情報</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      年金情報
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">国民年金</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">厚生年金</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">その他</a></li>
+                    </ul>
+                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <a href="profile3.html" class="alink">
+              <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                <div><span class="numbering">3</span><span class="txtpos2 f-size12 left_title">現在の投資状況</span></div>
+                <div class="f-size14 text-end">日本株 20 % <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+
+                  <div style="padding-right: 25px;">日本株 20 %<br>
+                    外国株 20 %<br>
+                    日本債券 20 %<br>
+                    外国債券 20 %<br>
+                    現預金 20 %
+                  </div>
+
+                </div>
+              </div>
+            </a>
+
+              <div class="alink">
+                <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                  <div>
+                    <span class="numbering">4</span>
+                    <span class="txtpos2 f-size12 left_title">現在の年収</span>
+                  </div>
+                  <div class="f-size14">
+  
+                    <div class="btn-group">
+                      <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        600万円
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">500万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">600万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">700万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kosei">800万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="other">900万円以上</a></li>
+                      </ul>
+                    </div>
+                    <span class="arrw_pos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="hover-icon">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="alink">
+                <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                  <div>
+                    <span class="numbering">5</span>
+                    <span class="txtpos2 f-size12 left_title">就労開始年齢</span>
+                  </div>
+                  <div class="f-size14">
+  
+                    <div class="btn-group">
+                      <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        23歳
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">20歳</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">21歳</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">22歳</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kosei">23歳</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="other">24歳</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="other">25歳</a></li>
+                      </ul>
+                    </div>
+                    <span class="arrw_pos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="hover-icon">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+  
+  
+  
+  
+              <a href="profile2.html" class="alink">
+                <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                  <div><span class="numbering">6</span><span class="txtpos2 f-size12 left_title">ローンの状況</span></div>
+                  <div class="f-size14 text-end">自動車<span class="arrw_pos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="hover-icon">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                      </svg>
+                    </span>
+                    <div style="padding-right: 25px;">時計</div>
+                  </div>
+                </div>
+              </a>
+  
+  
+  
+              <!-- <a href="#" class="alink">
+                <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                  <div><span class="numbering">7</span><span class="txtpos2 f-size12 left_title">月次貯蓄可能額</span></div>
+                  <div class="f-size14">10万円<span class="arrw_pos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="hover-icon">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                      </svg>
+                    </span></div>
+                </div>
+              </a> -->
+  
+              
+              <div class="alink">
+                <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                  <div>
+                    <span class="numbering">7</span>
+                    <span class="txtpos2 f-size12 left_title">月次貯蓄可能額</span>
+                  </div>
+                  <div class="f-size14">
+  
+                    <div class="btn-group">
+                      <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        10万円
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">10万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">20万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">30万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="kosei">40万円</a></li>
+                        <li><a class="f-size14 dropdown-item" href="#" value="other">50万円以上</a></li>
+                      </ul>
+                    </div>
+                    <span class="arrw_pos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="hover-icon">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <a href="profile4.html" class="alink">
+                <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                  <div><span class="numbering">8</span><span class="txtpos2 f-size12 left_title">家族情報</span></div>
+                  <div class="f-size14">既婚、子ども2人<span class="arrw_pos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="hover-icon">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                      </svg>
+                    </span></div>
+                </div>
+              </a>
+  
+            </div>
+
           
-      
-        
-          <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">1</span><span class="txtpos2 f-size12 left_title">生年月日</span></div>
-            <div class="f-size14 lightgreytxt">1994/5/25 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
+
           </div>
-          </a>
-			
-			
-			<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">2</span><span class="txtpos2 f-size12 left_title">性別</span></div>
-            <div class="f-size14 lightgreytxt">男 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">3</span><span class="txtpos2 f-size12 left_title">職業</span></div>
-            <div class="f-size14">会社員 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			
-		<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">4</span><span class="txtpos2 f-size12 left_title">年収</span></div>
-            <div class="f-size14">600万円 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-				<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">5</span><span class="txtpos2 f-size12 left_title">金融資産</span></div>
-            <div class="f-size14">500万 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			<a ="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">6</span><span class="txtpos2 f-size12 left_title">家族構成</span></div>
-            <div class="f-size14">独身、子供あり <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		  </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">        
-         
-             <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">1</span><span class="txtpos2 f-size12 left_title">引退年齢</span></div>
-            <div class="f-size14 ">65歳 2065年3月 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			
-			<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">2</span><span class="txtpos2 f-size12 left_title">年金情報</span></div>
-            <div class="f-size14">国民年金 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-				
-			
-		<a href="profile3.html" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">3</span><span class="txtpos2 f-size12 left_title">現在の投資状況</span></div>
-            <div class="f-size14 text-end">日本株 20 % <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span>
-			  
-			  <div style="padding-right: 25px;">日本株 20 %<br>
-外国株 20 %<br>
-日本債券 20 %<br>
-外国債券 20 %<br>
-現預金 20 %
-</div>
-			  
-			  
-			  
-			  
-			  </div>
-          </div>
-          </a>
-			
-				<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">4</span><span class="txtpos2 f-size12 left_title">現在の年収</span></div>
-            <div class="f-size14">600万円 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">5</span><span class="txtpos2 f-size12 left_title">就労開始年齢</span></div>
-            <div class="f-size14">23歳 <span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			
-			
-			
-				<a href="profile2.html" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">6</span><span class="txtpos2 f-size12 left_title">ローンの状況</span></div>
-            <div class="f-size14 text-end">自動車<span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span>
-			  <div style="padding-right: 25px;">時計</div>
-			  </div>
-          </div>
-          </a>
-			
-			
-			
-			<a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">7</span><span class="txtpos2 f-size12 left_title">月次貯蓄可能額</span></div>
-            <div class="f-size14">10万円<span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			
-			<a href="profile4.html" class="alink">
-          <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-            <div><span class="numbering">8</span><span class="txtpos2 f-size12 left_title">家族情報</span></div>
-            <div class="f-size14">既婚、子ども2人<span class="arrw_pos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-              </svg>
-              </span></div>
-          </div>
-          </a>
-			
-			
-			
-			
-			
-			
-			
-			
-       </div>
-        
+
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="mt-auto">
+    <div class="container p-3">
+      <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
+      <div class="d-flex justify-content-center">
+        <div class="p-3"><a href="#">Notices</a></div>
+        <div class="p-3"><a href="#">Privacy policy</a></div>
+        <div class="p-3"><a href="#">Terms of use</a></div>
       </div>
-    </section>
-  </div>
-</div>
-<footer class="mt-auto">
-<div class="container p-3">
-  <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
-  <div class="d-flex justify-content-center">
-    <div class="p-3"><a href="#">Notices</a></div>
-    <div class="p-3"><a href="#">Privacy policy</a></div>
-    <div class="p-3"><a href="#">Terms of use</a></div>
-  </div>
-</div>
-<div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
-</div>
-<script src="js/bootstrap.bundle.min.js" ></script>
+    </div>
+    <div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
+    </div>
+    <style>
+      /* Remove the dropdown button's arrow (caret) */
+      .custom-dropdown-btn::after {
+        display: none;
+      }
+
+      /* Remove the border from the dropdown button */
+      .custom-dropdown-btn {
+        border: none;
+        background: none;
+        color: inherit;
+        font: inherit;
+      }
+
+      /* Remove hover effects */
+      .custom-dropdown-btn:hover {
+        background-color: transparent;
+        color: inherit;
+      }
+
+      /* Optionally, remove focus ring */
+      .custom-dropdown-btn:focus {
+        outline: none;
+      }
+    </style>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

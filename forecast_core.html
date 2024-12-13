@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light navbr">
       <div class="container-fluid" style="padding: 0; margin: 0px;"> 
         <!-- Left Side Logo/Brand --> 
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="page1.html">
         <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
         </a> 
         
@@ -46,77 +46,25 @@
 <div class="container">
   <div class="inner-container">
     <div class="breadcrumb_head fw-bold f-size16 mt-3 d-flex justify-content-between align-items-center">
-      <div class="f-size12 fw-normal"><a href="index.html" class="linksclr"><i class="bi bi-chevron-left"></i>ゴール</a></div>
-      <div  class="mx-auto">自宅購入頭金</div>		
-		
-		
-		
+      <div class="f-size12 fw-normal"><a href="edit_core.html" class="linksclr"><i class="bi bi-chevron-left"></i>ゴール</a></div>
+      <div  class="mx-auto">コアポートフォリオ</div>
+      <div class="f-size17 nav-link purple_text">編集</div>
     </div>
-	  
-	  <section>
-	  
-	   <div class="d-flex justify-content-md-end align-items-center justify-content-between">
-      <div class="me-3">
-		  <div class="f-size12">目標金額</div>
-		  <div class="roboto-light f-size37">¥7,000,000</div>
-		  
-		   </div>
-      <div class="right_img">
-        <div class="roboto-light f-size37 text-center"><img src="images/asset-chart3.jpg" class="w-100"></div>   
-    
-      </div>
-    </div>
-	  
-	  </section>
-	  
-    <section>     
-      <div class="text-center inner_sec_img2"><img src="images/asset-chart3_1.jpg" style="width:100%"></div>    
-      <a href="#" class="alink">
-      <div class="inner_section justify-content-between mt-4 mb-4 align-items-center f-size16">
-        <div><span class="f-size16 ">現在の評価額</span></div>
-        <div class="text-end project_text2">¥1,490,190
-          <div class="smalltext-info-big2 text-end">評価損益率：19.17%</div>
+    <section>
+      <div class="d-flex justify-content-md-end align-items-center justify-content-between mt-3 mb-3">
+        <div class="me-3">目標金額</div>
+        <div>
+          <div class="roboto-light f-size37 text-end">¥20,000,000<br>
+          </div>
         </div>
       </div>
-      </a> <a href="#" class="alink">
-      <div class="inner_section justify-content-between f-size16  mt-4 mb-4 align-items-center">
-        <div><span>目標期間</span></div>
-        <div class="text-end">2028年10月 
-        
-        </div>
+      <div class="tab-content">
+        <div class="text-center f-size16"> 今後 2 万円の積立を継続した場合 <span class="purple_text fw-bold">70％</span>の確率で<span class="purple_text fw-bold">3052</span>万円 </div>
+        <div class="mt-4"><img src="images/asset-chart6.jpg" class="w-100"></div>
+        <div class="mt-4 mb-2">想定ポートフォリオ</div>
+        <div><img src="images/asset-chart7.jpg" class="w-100"></div>
       </div>
-      </a> 
-		<a href="#" class="alink">
-      <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-        <div></span><span>現在の不足金額</span></div>
-        <div class="text-end">- ¥509,810
-         
-        </div>
-      </div>
-      </a>
-	  
-	  <a href="#" class="alink">
-      <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-        <div></span><span>毎月の積立額</span></div>
-        <div class="text-end">¥30,000
-        
-        </div>
-      </div>
-      </a>
-	
-	<a href="#" class="alink">
-      <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-        <div></span><span>達成確率</span></div>
-        <div class="text-end">80%
-        
-        </div>
-      </div>
-      </a>
-	  
-	  </section>
-	
-	<a href="edit_goal.html"><div class="mt-5 mb-5 text-center"><button type="button" class="btn btn-primary btn-purple">ゴール設定を確認</button></div></a>
-	
+    </section>
   </div>
 </div>
 <footer class="mt-auto">
@@ -130,7 +78,25 @@
 </div>
 <div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
 </div>
+<script src="js/bootstrap.bundle.min.js" ></script> 
+<script>
 
-<script src="js/bootstrap.bundle.min.js" ></script>
+         const buttons = document.querySelectorAll('.tab-nav button');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+        
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and tab panes
+                buttons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding tab pane
+                button.classList.add('active');
+                document.getElementById(button.dataset.tab).classList.add('active');
+            });
+        });
+ 
+
+</script>
 </body>
 </html>
