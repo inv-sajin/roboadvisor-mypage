@@ -45,6 +45,17 @@
               <li class="nav-item px-3"> <a class="nav-link" href="portfolio1-2.html">ポートフォリオ</a> </li>
               <li class="nav-item"> <a class="nav-link px-3" href="profile1.html">プロファイル</a> </li>
               <li class="nav-item px-3"> <a class="nav-link" href="#">その他</a> </li>
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Welcome User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="change password.html">Change Password</a></li>
+                  <li><a class="dropdown-item" href="login.html">Logout</a></li>
+
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -86,7 +97,7 @@
                   </span></div>
               </div>
             </a>
-            
+
 
 
             <a href="#" class="alink">
@@ -101,7 +112,7 @@
               </div>
             </a>
 
-    
+
             <div class="alink">
               <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
                 <div>
@@ -109,18 +120,19 @@
                   <span class="txtpos2 f-size12 left_title">職業</span>
                 </div>
                 <div class="f-size14">
-
+                  <!-- Dropdown Button -->
                   <div class="btn-group">
                     <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
                       aria-expanded="false">
                       会社員
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">会社員</a></li>
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kokumin">会社員</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="kosei">自営業</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="other">ビジネスマン</a></li>
                     </ul>
                   </div>
+                  <!-- Arrow Icon -->
                   <span class="arrw_pos">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       class="hover-icon">
@@ -130,7 +142,6 @@
                 </div>
               </div>
             </div>
-            
 
             <div class="alink">
               <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
@@ -141,12 +152,13 @@
                 <div class="f-size14">
 
                   <div class="btn-group">
-                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" id="dropdownButton" class="btn custom-dropdown-btn dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       600万円
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">500万円</a></li>
-                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">600万円</a></li>
+                      <li><a class="f-size14 dropdown-item " href="#" value="kokumin">500万円</a></li>
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kokumin">600万円</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="kokumin">700万円</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="kosei">800万円</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="other">900万円以上</a></li>
@@ -172,12 +184,13 @@
                 <div class="f-size14">
 
                   <div class="btn-group">
-                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
                       6000万円
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="f-size14 dropdown-item" href="#" value="kokumin">5000万円</a></li>
-                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">6000万円</a></li>
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kokumin">6000万円</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="kokumin">7000万円</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="kosei">8000万円</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="other">9000万円以上</a></li>
@@ -202,13 +215,14 @@
                 <div class="f-size14">
 
                   <div class="btn-group">
-                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
                       独身、子供あり
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="f-size14 dropdown-item" href="#" value="kokumin">シングル</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="kokumin">既婚</a></li>
-                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin"> 独身、子供あり</a></li>
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kokumin"> 独身、子供あり</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="kosei">結婚、子供あり</a></li>
                     </ul>
                   </div>
@@ -221,12 +235,6 @@
                 </div>
               </div>
             </div>
-
-
-
-
-
-
 
 
 
@@ -272,7 +280,7 @@
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="f-size14 dropdown-item" href="#" value="kokumin">国民年金</a></li>
-                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">厚生年金</a></li>
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kosei">厚生年金</a></li>
                       <li><a class="f-size14 dropdown-item" href="#" value="other">その他</a></li>
                     </ul>
                   </div>
@@ -312,86 +320,88 @@
               </div>
             </a>
 
-              <div class="alink">
-                <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
-                  <div>
-                    <span class="numbering">4</span>
-                    <span class="txtpos2 f-size12 left_title">現在の年収</span>
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">4</span>
+                  <span class="txtpos2 f-size12 left_title">現在の年収</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      600万円
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">500万円</a></li>
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kokumin">600万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">700万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">800万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">900万円以上</a></li>
+                    </ul>
                   </div>
-                  <div class="f-size14">
-  
-                    <div class="btn-group">
-                      <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        600万円
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">500万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">600万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">700万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kosei">800万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="other">900万円以上</a></li>
-                      </ul>
-                    </div>
-                    <span class="arrw_pos">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        class="hover-icon">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
-                      </svg>
-                    </span>
-                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
                 </div>
               </div>
-              <div class="alink">
-                <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
-                  <div>
-                    <span class="numbering">5</span>
-                    <span class="txtpos2 f-size12 left_title">就労開始年齢</span>
+            </div>
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">5</span>
+                  <span class="txtpos2 f-size12 left_title">就労開始年齢</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      23歳
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">20歳</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">21歳</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">22歳</a></li>
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kosei">23歳</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">24歳</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">25歳</a></li>
+                    </ul>
                   </div>
-                  <div class="f-size14">
-  
-                    <div class="btn-group">
-                      <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        23歳
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">20歳</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">21歳</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">22歳</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kosei">23歳</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="other">24歳</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="other">25歳</a></li>
-                      </ul>
-                    </div>
-                    <span class="arrw_pos">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        class="hover-icon">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
-                      </svg>
-                    </span>
-                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
                 </div>
               </div>
-  
-  
-  
-  
-              <a href="profile2.html" class="alink">
-                <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-                  <div><span class="numbering">6</span><span class="txtpos2 f-size12 left_title">ローンの状況</span></div>
-                  <div class="f-size14 text-end">自動車<span class="arrw_pos">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        class="hover-icon">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
-                      </svg>
-                    </span>
-                    <div style="padding-right: 25px;">時計</div>
-                  </div>
+            </div>
+
+
+
+
+            <a href="profile2.html" class="alink">
+              <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                <div><span class="numbering">6</span><span class="txtpos2 f-size12 left_title">ローンの状況</span></div>
+                <div class="f-size14 text-end">自動車<span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
+                  <div style="padding-right: 25px;">時計</div>
                 </div>
-              </a>
-  
-  
-  
-              <!-- <a href="#" class="alink">
+              </div>
+            </a>
+
+
+
+            <!-- <a href="#" class="alink">
                 <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
                   <div><span class="numbering">7</span><span class="txtpos2 f-size12 left_title">月次貯蓄可能額</span></div>
                   <div class="f-size14">10万円<span class="arrw_pos">
@@ -402,60 +412,61 @@
                     </span></div>
                 </div>
               </a> -->
-  
-              
-              <div class="alink">
-                <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
-                  <div>
-                    <span class="numbering">7</span>
-                    <span class="txtpos2 f-size12 left_title">月次貯蓄可能額</span>
+
+
+            <div class="alink">
+              <div class="inner_section justify-content-between f-size14 mt-1 mb-1">
+                <div>
+                  <span class="numbering">7</span>
+                  <span class="txtpos2 f-size12 left_title">月次貯蓄可能額</span>
+                </div>
+                <div class="f-size14">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      10万円
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="f-size14 dropdown-item active" href="#" value="kokumin">10万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">20万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kokumin">30万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="kosei">40万円</a></li>
+                      <li><a class="f-size14 dropdown-item" href="#" value="other">50万円以上</a></li>
+                    </ul>
                   </div>
-                  <div class="f-size14">
-  
-                    <div class="btn-group">
-                      <button type="button" class="btn custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        10万円
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">10万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">20万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kokumin">30万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="kosei">40万円</a></li>
-                        <li><a class="f-size14 dropdown-item" href="#" value="other">50万円以上</a></li>
-                      </ul>
-                    </div>
-                    <span class="arrw_pos">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        class="hover-icon">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
-                      </svg>
-                    </span>
-                  </div>
+                  <span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span>
                 </div>
               </div>
-  
-  
-              <a href="profile4.html" class="alink">
-                <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
-                  <div><span class="numbering">8</span><span class="txtpos2 f-size12 left_title">家族情報</span></div>
-                  <div class="f-size14">既婚、子ども2人<span class="arrw_pos">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        class="hover-icon">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
-                      </svg>
-                    </span></div>
-                </div>
-              </a>
-  
             </div>
 
-          
+
+            <a href="profile4.html" class="alink">
+              <div class="inner_section justify-content-between f-size14  mt-1 mb-1">
+                <div><span class="numbering">8</span><span class="txtpos2 f-size12 left_title">家族情報</span></div>
+                <div class="f-size14">既婚、子ども2人<span class="arrw_pos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      class="hover-icon">
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                    </svg>
+                  </span></div>
+              </div>
+            </a>
 
           </div>
 
+
+
         </div>
-      </section>
+
     </div>
+    </section>
+  </div>
   </div>
   <footer class="mt-auto">
     <div class="container p-3">
@@ -493,7 +504,22 @@
         outline: none;
       }
     </style>
+    <!-- Bootstrap Bundle JS (Includes Popper) -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButtons = document.querySelectorAll(".custom-dropdown-btn");
+
+        dropdownButtons.forEach((button) => {
+          const arrowIcon = button.closest(".inner_section").querySelector("svg");
+
+          button.addEventListener("click", function () {
+            arrowIcon.classList.toggle("rotate");
+          });
+        });
+      });
+
+    </script>
 </body>
 
 </html>

@@ -1,114 +1,138 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Robo Advisor</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="css/style.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
-<nav class="nav">
-  <div class="container p-0">
-    <nav class="navbar navbar-expand-lg navbar-light navbr">
-      <div class="container-fluid" style="padding: 0; margin: 0px;"> 
-        <!-- Left Side Logo/Brand --> 
-        <a class="navbar-brand" href="index.html">
-        <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
-        </a> 
-        
-        <!-- Mobile Toggle Button with Custom Animation -->
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        
-        <!-- Navigation Menu Items -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          </ul>
-          
-          <!-- Right Side Menu Items -->
-          <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
-            <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link" href="#">入出金</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link" href="portfolio1-2.html">ポートフォリオ</a> </li>
-            <li class="nav-item"> <a class="nav-link px-3" href="profile1.html">プロファイル</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link" href="#">その他</a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-</nav>
-<div class="menu-bottom-line"></div>
-<div class="container">
-  <div class="inner-container">
-    <div class="breadcrumb_head fw-bold f-size16 mt-3 d-flex justify-content-between align-items-center">
-      <div class="f-size12 fw-normal"><a href="index.html" class="linksclr"><i class="bi bi-chevron-left"></i> ホーム</a></div>
-      <div  class="mx-auto">米国株</div>
-    </div>
-    <section>
-      <div class="text-end">
-        <div class="dropdown"> <a class="btn btn-link dropdown-toggle btns-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> 全期間 </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Option 1</a></li>
-            <li><a class="dropdown-item" href="#">Option 2</a></li>
-            <li><a class="dropdown-item" href="#">Option 3</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-center inner_sec_img2"><img src="images/asset-chart.jpg" style="width:100%"></div>
-    
-      <a href="page3.html" class="alink">
-      <div class="inner_section justify-content-between mt-4 mb-4 align-items-center f-size16">
-        <div><span>NASDAQ</span></div>
-        <div class="text-end">¥261,000 <span class="arrw_pos">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-          </svg>
-          </span>
-          <div class="smalltext-info-med">損益：¥91,000（34.86%）</div>
-        </div>
-      </div>
-      </a> <a href="page3.html" class="alink">
-      <div class="inner_section justify-content-between f-size16  mt-4 mb-4 align-items-center">
-        <div><span>S&P500</span></div>
-        <div class="text-end">¥156,600 <span class="arrw_pos">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-          </svg>
-          </span>
-          <div class="smalltext-info-med">損益：¥52,499（20.37%）</div>
-        </div>
-      </div>
-      </a> <a href="page3.html" class="alink">
-      <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-        <div></span><span>NYダウ</span></div>
-        <div class="text-end">¥104,400 <span class="arrw_pos">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
-            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
-          </svg>
-          </span>
-          <div class="smalltext-info-med">損益：¥12,392（10.03%）</div>
-        </div>
-      </div>
-      </a> </section>
-  </div>
-</div>
-<footer class="mt-auto">
-<div class="container p-3">
-  <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
-  <div class="d-flex justify-content-center">
-    <div class="p-3"><a href="#">Notices</a></div>
-    <div class="p-3"><a href="#">Privacy policy</a></div>
-    <div class="p-3"><a href="#">Terms of use</a></div>
-  </div>
-</div>
-<div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
-</div>
 
-<script src="js/bootstrap.bundle.min.js" ></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robo Advisor</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="css/style.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <nav class="nav">
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-lg navbar-light navbr">
+        <div class="container-fluid" style="padding: 0; margin: 0px;">
+          <!-- Left Side Logo/Brand -->
+          <a class="navbar-brand" href="index.html">
+            <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
+          </a>
+
+          <!-- Mobile Toggle Button with Custom Animation -->
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+              class="icon-bar"></span> </button>
+
+          <!-- Navigation Menu Items -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+
+            <!-- Right Side Menu Items -->
+            <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
+              <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="#">入出金</a> </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="portfolio1-2.html">ポートフォリオ</a> </li>
+              <li class="nav-item"> <a class="nav-link px-3" href="profile1.html">プロファイル</a> </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="#">その他</a> </li>
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Welcome User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="change password.html">Change Password</a></li>
+                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </nav>
+  <div class="menu-bottom-line"></div>
+  <div class="container">
+    <div class="inner-container">
+      <div class="breadcrumb_head fw-bold f-size16 mt-3 d-flex justify-content-between align-items-center">
+        <div class="f-size12 fw-normal"><a href="index.html" class="linksclr"><i class="bi bi-chevron-left"></i> ホーム</a>
+        </div>
+        <div class="mx-auto">米国株</div>
+      </div>
+      <section>
+        <div class="text-end">
+          <div class="dropdown"> <a class="btn btn-link dropdown-toggle btns-link" href="#" role="button"
+              id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> 全期間 </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Option 1</a></li>
+              <li><a class="dropdown-item" href="#">Option 2</a></li>
+              <li><a class="dropdown-item" href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center inner_sec_img2"><img src="images/asset-chart.jpg" style="width:100%"></div>
+
+        <a href="page3.html" class="alink">
+          <div class="inner_section justify-content-between mt-4 mb-4 align-items-center f-size16">
+            <div><span>NASDAQ</span></div>
+            <div class="text-end">¥261,000 <span class="arrw_pos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                </svg>
+              </span>
+              <div class="smalltext-info-med">損益：¥91,000（34.86%）</div>
+            </div>
+          </div>
+        </a> <a href="page3.html" class="alink">
+          <div class="inner_section justify-content-between f-size16  mt-4 mb-4 align-items-center">
+            <div><span>S&P500</span></div>
+            <div class="text-end">¥156,600 <span class="arrw_pos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                </svg>
+              </span>
+              <div class="smalltext-info-med">損益：¥52,499（20.37%）</div>
+            </div>
+          </div>
+        </a> <a href="page3.html" class="alink">
+          <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
+            <div></span><span>NYダウ</span></div>
+            <div class="text-end">¥104,400 <span class="arrw_pos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="hover-icon">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+                </svg>
+              </span>
+              <div class="smalltext-info-med">損益：¥12,392（10.03%）</div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </div>
+  </div>
+  <footer class="mt-auto">
+    <div class="container p-3">
+      <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
+      <div class="d-flex justify-content-center">
+        <div class="p-3"><a href="#">Notices</a></div>
+        <div class="p-3"><a href="#">Privacy policy</a></div>
+        <div class="p-3"><a href="#">Terms of use</a></div>
+      </div>
+    </div>
+    <div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
