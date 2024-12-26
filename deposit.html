@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robo Advisor</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="nav">
+  <div class="container p-0">
+    <nav class="navbar navbar-expand-lg navbar-light navbr">
+      <div class="container-fluid" style="padding: 0; margin: 0px;"> 
+        <!-- Left Side Logo/Brand --> 
+        <a class="navbar-brand" href="page1.html">
+        <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
+        </a> 
+        
+        <!-- Mobile Toggle Button with Custom Animation -->
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        
+        <!-- Navigation Menu Items -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          
+          <!-- Right Side Menu Items -->
+          <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
+            <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
+               <li class="nav-item dropdown px-3"> <a class="nav-link dropdown-toggle" href="#"
+                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 入出金 </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="full-withdrawal.html">Withdrawal</a></li>
+                <li><a class="dropdown-item" href="deposit.html">Deposit</a></li>
+                <li><a class="dropdown-item" href="transaction-list.html">Transaction list</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-3"> <a class="nav-link" href="portfolio1-2.html">ポートフォリオ</a> </li>
+            <li class="nav-item"> <a class="nav-link px-3" href="profile1.html">プロファイル</a> </li>
+            <li class="nav-item px-3"> <a class="nav-link" href="#">その他</a> </li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Welcome User
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="change password.html">Change Password</a></li>
+                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</nav>
+<div class="menu-bottom-line"></div>
+<div class="container">
+  <div class="inner-container">
+    <div class="breadcrumb_head-dbline fw-bold f-size16 mt-3">Main content </div>
+    <div class="row">
+      <div class="col-md-12 text-center mt-4">
+        <h2>Deposits</h2>
+        <div>There are two ways to make deposits.
+          For details, please refer to the "Notes" at the bottom of the page.</div>
+        <h5 class="mt-3 text-start">For Direct Bank Transfers</h5>
+        <div class="text-start">You can directly deposit into your designated account with THEO.
+          Deposits from accounts with names different from the registered name or using accounts under a different name will not be accepted.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card w-100 withdraw_bg p-3 mt-3 " style="border: 1px solid #dcdcdc;">
+          <div class="row mb-2">
+            <div class="col-md-6 text-end">Financial Institution</div>
+            <div class="col-md-6">: xxxx xxx xxx xx</div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6 text-end">Branch Name</div>
+            <div class="col-md-6">: xxxx xxx xxx xx</div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6 text-end">Account Type</div>
+            <div class="col-md-6">: Ordinary Deposit</div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6 text-end">Account Number</div>
+            <div class="col-md-6">: xxxx xxx xxx xx</div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6 text-end">Account Name</div>
+            <div class="col-md-6">:  xxxx xxx xxx xx</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 f-size12 text-center mt-2 mb-2">*Note: Transfer fees are borne by the customer.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h5 class="mt-3 text-start">Transfers from a Securities Account</h5>
+        <div class="text-start">You can deposit funds into your securities account and then transfer them to THEO for operations.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card w-100  p-3 mt-3 " style="border: 1px solid #dcdcdc;">
+          <div class="row mb-2">
+            <div class="col-md-12"><span class="step">STEP 1</span> Deposit into the Securities Account</div>
+            <div class="mt-2">[1] or [2] - Choose one method to deposit into your securities account.</div>
+            <div class="mt-4">
+              <div class="fw-bold">1. Online Transfer</div>
+              <div>If you have applied for and use the internet services of the designated financial institution, you can make transfers online.<br>
+                Click below to see the list of available financial institutions.</div>
+              <div class="mt-2 mb-2 text-center"> <a href="#">
+                <button type="button" class="btn btn-purple" style="width: 300px;" >Transfer via Financial Institution</button>
+                </a> </div>
+            </div>
+            <div class="mt-4">
+              <div class="fw-bold">2. Bank Transfer</div>
+              <div>Since a designated deposit account has been assigned to you, you can also transfer funds via bank transfer within Japan.<br>
+                Note: Transfer fees set by the financial institution you use will apply.
+                Refunds may occur for any overpaid fees depending on the financial institution or process.</div>
+              <div class="mt-2 mb-2 text-center"> <a href="#">
+                <button type="button" class="btn btn-purple" style="width: 300px;" >Transfer via Bank Transfer</button>
+                </a> </div>
+              <div class="mt-2 mb-2">After login, navigate to "Deposits (Transfers)" to proceed.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card w-100  p-3 mt-3 " style="border: 1px solid #dcdcdc;">
+          <div class="row mb-2">
+            <div class="col-md-12"><span class="step">STEP 2</span> Transfer Funds from the Securities Account to THEO</div>
+            <div class="mt-2">Go to the "THEO Account Transfer - Input Instructions" page to specify the amount to transfer into THEO.</div>
+            <div class="mt-4">
+              <div>
+                <ul>
+                  <li>Check that the transferable amount is displayed.</li>
+                  <li>The timing for the funds to reflect may vary based on the financial institution after completing STEP 1.</li>
+                </ul>
+              </div>
+              <div class="mt-2 mb-2 text-center"> <a href="#">
+                <button type="button" class="btn btn-purple" style="width: 300px;" >Transfer Funds to THEO from Securities Account</button>
+                </a> </div>
+            </div>
+            <div class="mt-2"> After logging in, you will be redirected to the "THEO Account Transfer - Input Instructions" page. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card w-100  p-3 mt-3 " style="border: 1px solid #dcdcdc;">
+          <div class="row mb-2">
+            <div class="col-md-12"><span class="step">STEP 3</span> Deposit Completed</div>
+            <div class="mt-2">Deposits will be reflected in your transaction history on THEO's My Page between 17:00-23:00 on business days.</div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-2">
+			<div class="fw-bold pb-2">Important Notes</div>
+          <div class="mb-3" > To start asset management, a deposit of at least 10,000 JPY is required. </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="mt-auto">
+  <div class="container p-3">
+    <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
+    <div class="d-flex justify-content-center">
+      <div class="p-3"><a href="#">Notices</a></div>
+      <div class="p-3"><a href="#">Privacy policy</a></div>
+      <div class="p-3"><a href="#">Terms of use</a></div>
+    </div>
+  </div>
+  <div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

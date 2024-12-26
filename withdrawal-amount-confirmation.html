@@ -23,7 +23,7 @@
       <nav class="navbar navbar-expand-lg navbar-light navbr">
         <div class="container-fluid" style="padding: 0; margin: 0px;">
           <!-- Left Side Logo/Brand -->
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="page1.html">
             <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
           </a>
 
@@ -39,7 +39,7 @@
             </ul>
 
             <!-- Right Side Menu Items -->
-             <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
+          <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
               <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
               <li class="nav-item dropdown px-3"> <a class="nav-link dropdown-toggle" href="#"
                   id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 入出金 </a>
@@ -60,6 +60,7 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="change password.html">Change Password</a></li>
                   <li><a class="dropdown-item" href="login.html">Logout</a></li>
+
                 </ul>
               </li>
             </ul>
@@ -71,88 +72,98 @@
   <div class="menu-bottom-line"></div>
   <div class="container">
     <div class="inner-container">
-      <div class="breadcrumb_head fw-bold f-size16 mt-3 d-flex justify-content-between align-items-center">
-        <div class="f-size12 fw-normal"><a href="page2.html" class="linksclr"><i class="bi bi-chevron-left"></i>米国株</a>
+      <div class="breadcrumb_head-dbline  f-size16 mt-3"> xx xxxx </div>
+      <section>
+        <div class="col-md-12 text-center mt-4">
+          <h2>Withdrawal</h2>
+
         </div>
-        <div class="mx-auto">詳細</div>
+        <div class="col-md-12">
+          <div class="card w-100 withdraw_bg p-4 mt-3 " style="border: 1px solid #dcdcdc;">
+            <h5 class="text-center">You cannot make the next withdrawal until the amount is transferred to your
+              securities account.</h5>
+            <div class="row mt-2">
+              <div class="col-md-6 text-end"> Withdrawal Request Date</div>
+              <div class="col-md-6"> : September 25, 2024</div>
+
+            </div>
+            <div class="row mt-2">
+              <div class="col-md-6 text-end">Requested Withdrawal Amount</div>
+              <div class="col-md-6"> : 70,000 yen</div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center mt-3">
+                <a href="withdrawal OTP confirmation.html"><button type="button" class="btn btn-purple"
+                    style="width: 200px;"> Confirm</button></a>
+
+              </div>
+
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Withdrawal Amount</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Enter the amount you want
+                        withdraw</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter amount">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-purple line_button" style="width: 100px;">Cancel</button>
+                    <button type="button" class="btn btn-purple" style="width: 150px;">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+
+
+      </section>
+
+
+      <div class="mt-5">Notes</div>
+      <div>
+        <ul style="font-size: 13px;">
+
+          <li>The withdrawal amount will be transferred to your securities account by the third business day after the
+            withdrawal request date. </li>
+          <li>Withdrawal requests cannot be canceled. </li>
+          <li>Depending on market conditions, the actual amount transferred may be less than the requested withdrawal
+            amount. In such cases, an amount equivalent to at least 100,000 yen will be retained in your account. </li>
+          <li>Once the withdrawal is complete, you cannot make another withdrawal request until the previous amount is
+            fully transferred to the securities account. </li>
+
+        </ul>
+
+
+
+
+
+
+
+
 
 
 
       </div>
 
-      <section>
 
-        <div class="d-flex justify-content-md-end align-items-center justify-content-between">
-          <div class="me-3">
-            <div class="f-size20">NASDAQ</div>
-            <div class="f-size12">評価額</div>
-          </div>
-          <div>
-            <div class="roboto-light f-size37 text-end">¥261,000</div>
-
-            <div class="text-end f-size13"><a href="#" class="link-red">前日比：￥-868<img src="images/downred.svg"></a>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section>
-        <div class="text-end">
-          <div class="dropdown"> <a class="btn btn-link dropdown-toggle btns-link" href="#" role="button"
-              id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> 全期間 </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Option 1</a></li>
-              <li><a class="dropdown-item" href="#">Option 2</a></li>
-              <li><a class="dropdown-item" href="#">Option 3</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-center inner_sec_img2"><img src="images/asset-chart2.jpg" style="width:100%"></div>
-
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between mt-4 mb-4 align-items-center f-size16">
-            <div><span class="f-size16 ">評価損益</span></div>
-            <div class="text-end project_text">¥91,000
-              <div class="smalltext-info-big">評価損益率：34.86%</div>
-            </div>
-          </div>
-        </a> <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16  mt-4 mb-4 align-items-center">
-            <div><span>取得価額</span></div>
-            <div class="text-end">¥170,000
-
-            </div>
-          </div>
-        </a>
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-            <div></span><span>平均取得単価</span></div>
-            <div class="text-end">¥15,736
-
-            </div>
-          </div>
-        </a>
-
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-            <div></span><span>基準価額</span></div>
-            <div class="text-end">¥24,159
-
-            </div>
-          </div>
-        </a>
-
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-            <div></span><span>保有数</span></div>
-            <div class="text-end">10.8032
-
-            </div>
-          </div>
-        </a>
-
-      </section>
     </div>
   </div>
   <footer class="mt-auto">
@@ -166,7 +177,6 @@
     </div>
     <div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
     </div>
-
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

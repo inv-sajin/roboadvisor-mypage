@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robo Advisor</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="nav">
+  <div class="container p-0">
+    <nav class="navbar navbar-expand-lg navbar-light navbr">
+      <div class="container-fluid" style="padding: 0; margin: 0px;"> 
+        <!-- Left Side Logo/Brand --> 
+        <a class="navbar-brand" href="page1.html">
+        <div class="p-2"> <img src="images/dummy logo.png" alt="Logo"></div>
+        </a> 
+        
+        <!-- Mobile Toggle Button with Custom Animation -->
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        
+        <!-- Navigation Menu Items -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          
+          <!-- Right Side Menu Items -->
+         <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
+              <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
+                 <li class="nav-item dropdown px-3"> <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 入出金 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="full-withdrawal.html">Withdrawal</a></li>
+                  <li><a class="dropdown-item" href="deposit.html">Deposit</a></li>
+                  <li><a class="dropdown-item" href="transaction-list.html">Transaction list</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="portfolio1-2.html">ポートフォリオ</a> </li>
+              <li class="nav-item"> <a class="nav-link px-3" href="profile1.html">プロファイル</a> </li>
+              <li class="nav-item px-3"> <a class="nav-link" href="#">その他</a> </li>
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Welcome User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="change password.html">Change Password</a></li>
+                  <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</nav>
+<div class="menu-bottom-line"></div>
+<div class="container">
+<div class="inner-container">
+<div class="breadcrumb_head-dbline fw-bold f-size16 mt-3">< Main content </div>
+<section>
+<div class="col-md-12 text-center mt-4">
+  <h2>About Withdrawal Methods</h2>
+  <div>We offers 3 withdrawal methods depending on your circumstances</div>
+</div>
+<div class="col-md-12">
+  <div class="card w-100 withdraw_bg p-3 mt-3" style="border: 1px solid #dcdcdc;">
+    <h5 class="text-center">Specify Amount for Withdrawal.</h5>
+    You can specify the desired amount to withdraw from your investment funds. For withdrawal requests made by 3:00 PM on business days, the funds will be deposited to your SMBC Nikko Securities account within 3 business days.
+    <div class="pt-2 pb-2 text-center">Deposits to securities account within 3 business days</div>
+    <div class="text-center p-3">
+    <a href="withdrawal-amount-confirmation.html"> <button type="button" class="btn btn-purple" style="width: 200px;" data-bs-toggle="modal" data-bs-target="#exampleModal2"> Partial Withdrawal</button></a> 
+    </div>
+	  
+	 <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Withdrawal Amount</h5>  
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Enter the amount you want withdraw</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter amount">
+</div>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-purple line_button" style="width: 100px;" >Cancel</button>
+  <button type="button" class="btn btn-purple" style="width: 150px;" >Submit</button>
+      </div>
+    </div>
+  </div>
+</div> 
+	  
+	  
+	  
+	  
+	  
+  </div>
+</div>
+<div class="col-md-12">
+<div class="card w-100 withdraw_bg p-3 mt-3" style="border: 1px solid #dcdcdc;">
+<h5 class="text-center">Full Withdrawal<br>
+  (Investment can be resumed) </h5>
+All ETFs you currently hold will be sold. For withdrawal requests made by 3:00 PM on business days, the funds will be deposited to your SMBC Nikko Securities account within 3 business days. After a full withdrawal, you can resume using THEO whenever you'd like to invest again.
+Deposits to securities account within 3 business days
+<div class="pt-2 pb-2 text-center">Deposits to securities account within 3 business days</div>
+<div class="text-center p-3">
+ <a href="withdrawal-amount-confirmation.html"><button type="button" class="btn btn-purple" style="width: 200px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Full Withdrawal</button></a> 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Notice Regarding Full Withdrawal</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body" style="background: #f5f5f5; border-radius: 15px; margin: 15px;">
+<h6 class="text-center">Please Confirm the Following:</h6>
+<div >
+<ul class="list-group">
+  <li class="list-group-item" style="background:#f5f5f5 !important">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="check1">
+      <label class="form-check-label" for="check1"> If you apply for a full withdrawal by 3:00 PM on a business day, the funds will be deposited into your SMBC Nikko Securities account on the third business day. </label>
+    </div>
+  </li>
+  <li class="list-group-item" style="background:#f5f5f5 !important">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="check2">
+      <label class="form-check-label" for="check2"> If you wish to transfer funds from your SMBC Nikko Securities account to a bank account, you will need to complete additional procedures through the "Nikko Easy Trade" system. </label>
+    </div>
+  </li>
+  <li class="list-group-item" style="background:#f5f5f5 !important">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="check3">
+      <label class="form-check-label" for="check3"> Once a full withdrawal is made, your automatic investment settings will be invalidated. Therefore, if your automatic investment settings are configured to keep your balance above the minimum investment amount, automatic withdrawals to reach the minimum investment amount may occur. If you want to modify your investment settings, please check here. </label>
+    </div>
+  </li>
+  <li class="list-group-item" style="background:#f5f5f5 !important">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="check3">
+      <label class="form-check-label" for="check3"> Dividends paid in US dollars cannot be withdrawn or confirmed in Japanese yen within Japan. </label>
+    </div>
+  </li>
+  <li class="list-group-item" style="background:#f5f5f5 !important">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="check3">
+      <label class="form-check-label" for="check3"> Please be aware that if the amount received in your designated account is insufficient, additional fees may apply. For details, please review the related information. If you experience any issues after selecting "Full Withdrawal," such as funds not being reflected in your securities account after the designated period, please contact THEO Customer Support. </label>
+    </div>
+  </li>
+</ul>
+
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-purple line_button" style="width: 100px;" >Back</button>
+  <button type="button" class="btn btn-purple" style="width: 250px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Proceed to Full Withdrawal</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12 mb-5">
+  <div class="card w-100 withdraw_bg p-3 mt-3" style="border: 1px solid #dcdcdc;">
+    <h5 class="text-center">Full Withdrawal<br>
+      (No plans to use THEO in the future) </h5>
+    All ETFs you currently hold will be sold and your THEO investment trust contract will be terminated. For withdrawal requests made by 3:00 PM on business days, the funds will be deposited to your SMBC Nikko Securities account within 3-7 business days. If you wish to resume using THEO, you will need to apply again.
+    <div class="pt-2 pb-2 text-center">Deposits to securities account within 3-7 business days</div>
+    <div class="text-center p-3">
+      <button type="button" class="btn btn-purple" style="width: 300px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Terminate Investment Trust Contract</button>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+</div>
+<footer class="mt-auto">
+<div class="container p-3">
+  <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
+  <div class="d-flex justify-content-center">
+    <div class="p-3"><a href="#">Notices</a></div>
+    <div class="p-3"><a href="#">Privacy policy</a></div>
+    <div class="p-3"><a href="#">Terms of use</a></div>
+  </div>
+</div>
+<div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
+</div>
+<script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
