@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robo Advisor</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center mt-4">
+      <h2 class="f-size30">Open an account</h2>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="row position-relative ps-3">
+      <div class="col step-container active">
+        <div class="step-circle">1</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Enter your personal information</span></div>
+      </div>
+		  <div class="col step-container active ">
+        <div class="step-circle">2</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Account details</span></div>
+      </div>
+		  <div class="col step-container active ">
+        <div class="step-circle">3</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Other details</span></div>
+      </div>
+      <div class="col step-container active ">
+        <div class="step-circle">4</div>
+        <div class="step-line linedisplay"></div>
+        <div class="step-text"><span>Enter your address</span></div>
+      </div>
+      
+      <div class="breaking">
+		  
+		  <div class="col step-container inactive">
+        <div class="step-circle">5</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Transaction information</span></div>
+      </div>	
+		  
+        <div class="col step-container inactive">
+          <div class="step-circle">6</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Bank account details</span></div>
+        </div>
+        <div class="col step-container inactive">
+          <div class="step-circle">7</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>KYC Verification</span></div>
+        </div>
+        <div class="col step-container inactive">
+          <div class="step-circle">8</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Confirmation and consent</span></div>
+        </div>
+		 
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card p-3 card-shadow mb-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Postal code *</label>
+             
+				<div class="row">
+				<div class="col-auto w70-100" >
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="text" class="form-control" id="inputPassword2" placeholder="Enter poster code">
+  </div>
+  <div class="col-auto text-end w30-100" >
+    <button type="button" class="btn btn-purple4" >Fetch Address</button>
+  </div>
+				
+				</div>
+				
+				
+				
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Prefecture *</label>
+            <select class="form-select" aria-label="Default select example">
+  <option selected>Select prefecture</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+            </div>
+          </div>
+        </div>
+		  <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Municipality *</label>
+              <select class="form-select" aria-label="Default select example">
+  <option selected>Select Municipality</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Street address*</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter street address">
+            </div>
+          </div>
+        </div>
+		  
+		   <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Building Name and room number *</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter first name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Prefecture of residence (as of Jan 1st of this year) *</label>
+               <select class="form-select" aria-label="Default select example">
+  <option selected>Select prefecture</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+            </div>
+          </div>
+        </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		
+		   
+		 
+	  <div class="row my-4">
+			   <div class="col-md-6 text-md-center text-sm-center text-lg-start text-center mb-3">
+			 <a href="step3.html"> <button type="button" class="btn btn-purple3" style="width: 150px;">Previous</button></a>
+			  
+			  </div>
+			  <div class="col-md-6 text-md-center text-sm-center text-lg-end  mb-3 text-center">
+			 <a href="#"> <button type="button" class="btn btn-purple4" style="width: 150px;">Next</button></a>
+			  
+			  </div>
+		  
+		  
+		  
+		  </div> 
+		  
+		  
+		  
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="mt-auto">
+<div class="container p-3">
+  <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
+  <div class="d-flex justify-content-center">
+    <div class="p-3"><a href="#">Notices</a></div>
+    <div class="p-3"><a href="#">Privacy policy</a></div>
+    <div class="p-3"><a href="#">Terms of use</a></div>
+  </div>
+</div>
+<div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
+</div>
+<script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
