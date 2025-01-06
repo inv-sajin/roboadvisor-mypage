@@ -43,7 +43,7 @@
       
       <div class="breaking">
 		  
-		  <div class="col step-container inactive">
+		  <div class="col step-container active">
         <div class="step-circle">5</div>
         <div class="step-line"></div>
         <div class="step-text"><span>Transaction information</span></div>
@@ -74,18 +74,14 @@
         <div class="row">
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Postal code *</label>
+              <label for="exampleFormControlInput1" class="form-label">Employment status *</label>
              
-				<div class="row">
-				<div class="col-auto w70-100" >
-    <label for="inputPassword2" class="visually-hidden">Password</label>
-    <input type="text" class="form-control" id="inputPassword2" placeholder="Enter poster code">
-  </div>
-  <div class="col-auto text-end w30-100" >
-    <button type="button" class="btn btn-purple4" >Fetch Address</button>
-  </div>
-				
-				</div>
+				    <select class="form-select" aria-label="Default select example">
+  <option selected>Select status</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
 				
 				
 				
@@ -93,32 +89,27 @@
           </div>
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Prefecture *</label>
-            <select class="form-select" aria-label="Default select example">
-  <option selected>Select prefecture</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
+              <label for="exampleFormControlInput1" class="form-label">Name of the company *</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter company name">
             </div>
           </div>
         </div>
 		  <div class="row">
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Municipality *</label>
-              <select class="form-select" aria-label="Default select example">
-  <option selected>Select Municipality</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
+              <label for="exampleFormControlInput1" class="form-label">Job position *</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your job">
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Street address*</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter street address">
+              <label for="exampleFormControlInput1" class="form-label">Annual income*</label>
+             <select class="form-select" aria-label="Default select example">
+  <option selected>Select annual income</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
             </div>
           </div>
         </div>
@@ -126,15 +117,20 @@
 		   <div class="row">
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Building Name and room number *</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter first name">
+              <label for="exampleFormControlInput1" class="form-label">Investment experience *</label>
+            <select class="form-select" aria-label="Default select example">
+  <option selected>Select your experience</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Prefecture of residence (as of Jan 1st of this year) *</label>
+              <label for="exampleFormControlInput1" class="form-label">Amount of financial assets * </label>
                <select class="form-select" aria-label="Default select example">
-  <option selected>Select prefecture</option>
+  <option selected>Select  asset type</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
@@ -144,20 +140,56 @@
         </div>
 		  
 		  
+		  <div class="row">
+		   <div class="col-md-6">			  
+			   <label for="exampleFormControlInput1" class="form-label">Are you in a position to know information about listed company  *</label>
+            <div class="mb-3">
+             	<div class="form-check form-check-inline mt-3" style="padding-left: 10px;">
+    <input type="radio" id="radio1" name="customRadio" class="custom-radio-input2" checked />
+	 <label for="radio1" class="custom-radio-label2"><span style="position:absolute; left: 30px; width: 200px; top:-3px;" class="lightgreytxt">Yes</span></label>				
+
+</div>
+<div class="form-check form-check-inline mt-3" style="padding-left: 80px;">
+     <input type="radio" id="radio2" name="customRadio" class="custom-radio-input2"  />
+  	 <label for="radio2" class="custom-radio-label2"><span style="position:absolute; left: 30px; width: 200px; top:-3px;" class="lightgreytxt">No</span></label>	
+</div>
+            </div>
+          </div>
 		  
 		  
 		  
+		  </div>  
+		  
+		<div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Company name *</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter company">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">How do you know this information*</label>
+             <select class="form-select" aria-label="Default select example">
+  <option selected>Select </option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+            </div>
+          </div>
+        </div>  
 		  
 		
 		   
 		 
 	  <div class="row my-4">
 			   <div class="col-md-6 text-md-center text-sm-center text-lg-start text-center mb-3">
-			 <a href="step3.html"> <button type="button" class="btn btn-purple3" style="width: 150px;">Previous</button></a>
+			 <a href="step4.html"> <button type="button" class="btn btn-purple3" style="width: 150px;">Previous</button></a>
 			  
 			  </div>
 			  <div class="col-md-6 text-md-center text-sm-center text-lg-end  mb-3 text-center">
-			 <a href="step5.html"> <button type="button" class="btn btn-purple4" style="width: 150px;">Next</button></a>
+			 <a href="step6.html"> <button type="button" class="btn btn-purple4" style="width: 150px;">Next</button></a>
 			  
 			  </div>
 		  

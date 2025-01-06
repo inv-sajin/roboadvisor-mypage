@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robo Advisor</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center mt-4">
+      <h2 class="f-size30">Open an account</h2>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="row position-relative ps-3">
+      <div class="col step-container active">
+        <div class="step-circle">1</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Enter your personal information</span></div>
+      </div>
+      <div class="col step-container active ">
+        <div class="step-circle">2</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Account details</span></div>
+      </div>
+      <div class="col step-container active ">
+        <div class="step-circle">3</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Other details</span></div>
+      </div>
+      <div class="col step-container active ">
+        <div class="step-circle">4</div>
+        <div class="step-line linedisplay"></div>
+        <div class="step-text"><span>Enter your address</span></div>
+      </div>
+      <div class="breaking">
+        <div class="col step-container active">
+          <div class="step-circle">5</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Transaction information</span></div>
+        </div>
+        <div class="col step-container active">
+          <div class="step-circle">6</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Bank account details</span></div>
+        </div>
+        <div class="col step-container active">
+          <div class="step-circle">7</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>KYC Verification</span></div>
+        </div>
+        <div class="col step-container active">
+          <div class="step-circle">8</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Confirmation and consent</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card p-3 card-shadow mb-5">
+        <div class="row mb-1 align-items-center">
+          <div class="col">
+            <h4>Check your input</h4>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h5 class="text-purple mb-0">Personal information</h5>
+          <a href="step1.html"><button type="button" class="btn btn-purple3" > <i class="bi bi-pencil"></i> Modify</button></a>
+        </div>
+        <div class="row g-4"> 
+          <!-- First Row -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >Last name</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >First name</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxxx xxxxxx</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Second Row -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >Last name (カナ)</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >First name (カナ)</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Third Row -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >Date of birth</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >Gender</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxx</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Fourth Row -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >Telephone Number</label>
+              </div>
+              <div class="col-6">
+                <div >xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >Email Address</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Fifth Row -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label >Password</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+          </div>
+        </div>
+        <div class="row g-4"> 
+          <!-- Account Type Section -->
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="text-purple mb-0">Account Type</h5>
+              <a href="step2.html"><button type="button" class="btn btn-purple3" > <i class="bi bi-pencil"></i> Modify</button></a>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-4">
+                <label>Account type</label>
+              </div>
+              <div class="col-8">
+                <div class="form-value">xxx xxxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+          </div>
+          
+          <!-- Nationality & Other details Section -->
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="text-purple mb-0">Nationality & Other details</h5>
+             <a href="step3.html"> <button type="button" class="btn btn-purple3" > <i class="bi bi-pencil"></i> Modify</button></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Nationality</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Citizenship</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Are associated with Politically Exposed Persons (PEPs) *</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+          </div>
+          
+          <!-- Address Information Section -->
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="text-purple mb-0">Address Information</h5>
+             <a href="step4.html"> <button type="button" class="btn btn-purple3" > <i class="bi bi-pencil"></i> Modify</button></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Post code</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxxx xxxxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Prefecture</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Municipality</label>
+              </div>
+              <div class="col-8">
+                <div class="form-value">xxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Street Address</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Building name and room number</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Prefecture of residence (as of Jan 1st of this year)</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+          </div>
+          
+          <!-- Transaction Information Section -->
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="text-purple mb-0">Transaction Information</h5>
+              <a href="step5.html"><button type="button" class="btn btn-purple3" > <i class="bi bi-pencil"></i> Modify</button></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Employment status</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Name of the company</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxxx xxxxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Employee position</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Annual income</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Investment experience</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Amount of financial assets</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Are you in a position to know information about listed company *</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Company name *</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>How do you know this information *</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+          </div>
+          
+          <!-- Bank Account details Section -->
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="text-purple mb-0">Bank Account details</h5>
+              <a href="step6.html"><button type="button" class="btn btn-purple3" > <i class="bi bi-pencil"></i> Modify</button></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Bank name</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxxxxx xxxxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Account holder name</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Branch name / Branch no.</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Account type</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <label>Account Number</label>
+              </div>
+              <div class="col-6">
+                <div class="form-value">xxx xxx xxx</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex mt-4">
+          <div class="form-check ">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked"> I agree to the <a href="#" class="textlink">Terms of Use</a>, <a href="#" class="textlink">Privacy Policy</a> and <a href="#" class="textlink">Other terms</a> </label>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-md-6 text-md-center text-sm-center text-lg-start text-center mb-3">
+            <a href="step7.html"><button type="button" class="btn btn-purple3" style="width: 150px;">Previous</button></a>
+          </div>
+          <div class="col-md-6 text-md-center text-sm-center text-lg-end  mb-3 text-center">
+           <a href="submission.html" <button type="button" class="btn btn-purple4" style="width: 250px;">Submit and open account</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="mt-auto">
+<div class="container p-3">
+  <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
+  <div class="d-flex justify-content-center">
+    <div class="p-3"><a href="#">Notices</a></div>
+    <div class="p-3"><a href="#">Privacy policy</a></div>
+    <div class="p-3"><a href="#">Terms of use</a></div>
+  </div>
+</div>
+<div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
+</div>
+<script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

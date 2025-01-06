@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robo Advisor</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center mt-4">
+      <h2 class="f-size30">Open an account</h2>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="row position-relative ps-3">
+      <div class="col step-container active">
+        <div class="step-circle">1</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Enter your personal information</span></div>
+      </div>
+      <div class="col step-container active ">
+        <div class="step-circle">2</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Account details</span></div>
+      </div>
+      <div class="col step-container active ">
+        <div class="step-circle">3</div>
+        <div class="step-line"></div>
+        <div class="step-text"><span>Other details</span></div>
+      </div>
+      <div class="col step-container active ">
+        <div class="step-circle">4</div>
+        <div class="step-line linedisplay"></div>
+        <div class="step-text"><span>Enter your address</span></div>
+      </div>
+      <div class="breaking">
+        <div class="col step-container active">
+          <div class="step-circle">5</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Transaction information</span></div>
+        </div>
+        <div class="col step-container active">
+          <div class="step-circle">6</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Bank account details</span></div>
+        </div>
+        <div class="col step-container active">
+          <div class="step-circle">7</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>KYC Verification</span></div>
+        </div>
+        <div class="col step-container inactive">
+          <div class="step-circle">8</div>
+          <div class="step-line"></div>
+          <div class="step-text"><span>Confirmation and consent</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card p-3 card-shadow mb-5">
+        
+        
+		  
+		  <div class="row">
+			  <div class="col-md-12 mt-2">
+			  
+			  <h5 class="f-size16">Upload Your ID Card (Front)</h5>
+				  <div class="f-size16 lightgreytxt" >Notes When Uploading Documents: Please Check the Images</div>	
+				  <ul class="f-size14 lightgreytxt">
+				  <li> Are the letters and photos clear?   </li>
+					    <li> Are there any shadows or flash light reflections?   </li>
+				  
+				  </ul>
+				  
+			  
+			  </div>
+		  
+		  </div>
+		  
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+				
+				
+				
+             <div id="uploadArea" class="upload-area">
+  <!-- Header -->
+  <div class="upload-area__header">   
+    <p class="upload-area__paragraph">
+     
+      <strong class="upload-area__tooltip">
+      
+        <span class="upload-area__tooltip-data"></span> <!-- Data Will be Comes From Js -->
+      </strong>
+    </p>
+	  <div class="text-start lightgreytxt">Upload  photo (Front side) </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Drop Zoon -->
+  <div id="dropZoon" class="upload-area__drop-zoon drop-zoon">
+    <span class="drop-zoon__icon">
+      <i class='bx bxs-file-image'><img src="images/upload.png"></i>
+    </span>
+    <p class="drop-zoon__paragraph" style="color: #000000 !important"><span style="display: block; font-weight: bold; font-size: 18px; ">Upload your file</span>Drop your file here or Click to browse</p>
+    <span id="loadingText" class="drop-zoon__loading-text">Please Wait</span>
+    <img src="" alt="Preview Image" id="previewImage" class="drop-zoon__preview-image" draggable="false">
+    <input type="file" id="fileInput" class="drop-zoon__file-input" accept="image/*">
+  </div>
+  <!-- End Drop Zoon -->
+
+  <!-- File Details -->
+  <div id="fileDetails" class="upload-area__file-details file-details">
+    <h3 class="file-details__title">Uploaded File</h3>
+
+    <div id="uploadedFile" class="uploaded-file">
+      <div class="uploaded-file__icon-container">
+        <i class='bx bxs-file-blank uploaded-file__icon'></i>
+        <span class="uploaded-file__icon-text"></span> <!-- Data Will be Comes From Js -->
+      </div>
+
+      <div id="uploadedFileInfo" class="uploaded-file__info">
+        <span class="uploaded-file__name">Proejct 1</span>
+        <span class="uploaded-file__counter">0%</span>
+      </div>
+    </div>
+  </div>
+  <!-- End File Details -->
+</div>
+            </div>
+          </div>
+			
+			<div class="col-md-6">
+            <div class="mb-3">
+				
+				
+				
+             <div id="uploadArea2" class="upload-area">
+  <!-- Header -->
+  <div class="upload-area__header">   
+    <p class="upload-area__paragraph">
+     
+      <strong class="upload-area__tooltip">
+      
+        <span class="upload-area__tooltip-data"></span> <!-- Data Will be Comes From Js -->
+      </strong>
+    </p>
+	   <div class="text-start lightgreytxt">Upload  photo (Back side) </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Drop Zoon -->
+  <div id="dropZoon" class="upload-area__drop-zoon drop-zoon">
+    <span class="drop-zoon__icon">
+      <i class='bx bxs-file-image'><img src="images/upload.png"></i>
+    </span>
+    <p class="drop-zoon__paragraph" style="color: #000000 !important"><span style="display: block; font-weight: bold; font-size: 18px; ">Upload your file</span>Drop your file here or Click to browse</p>
+    <span id="loadingText" class="drop-zoon__loading-text">Please Wait</span>
+    <img src="" alt="Preview Image" id="previewImage" class="drop-zoon__preview-image" draggable="false">
+    <input type="file" id="fileInput" class="drop-zoon__file-input" accept="image/*">
+  </div>
+  <!-- End Drop Zoon -->
+
+  <!-- File Details -->
+  <div id="fileDetails" class="upload-area__file-details file-details">
+    <h3 class="file-details__title">Uploaded File</h3>
+
+    <div id="uploadedFile" class="uploaded-file">
+      <div class="uploaded-file__icon-container">
+        <i class='bx bxs-file-blank uploaded-file__icon'></i>
+        <span class="uploaded-file__icon-text"></span> <!-- Data Will be Comes From Js -->
+      </div>
+
+      <div id="uploadedFileInfo" class="uploaded-file__info">
+        <span class="uploaded-file__name">Proejct 1</span>
+        <span class="uploaded-file__counter">0%</span>
+      </div>
+    </div>
+  </div>
+  <!-- End File Details -->
+</div>
+            </div>
+          </div>
+        </div>
+		  
+		  
+		  
+		  
+		  
+        <div class="row my-4">
+          <div class="col-md-6 text-md-center text-sm-center text-lg-start text-center mb-3  ">
+           <a href="step6.html"> <button type="button" class="btn btn-purple3" style="width: 150px;">Previous</button></a>
+          </div>
+          <div class="col-md-6 text-md-center text-sm-center text-lg-end  mb-3 text-center ">
+           <a href="step8.html"> <button type="button" class="btn btn-purple4" style="width: 150px;">Next</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="mt-auto">
+<div class="container p-3">
+  <div class="text-center"><img src="images/dummy logo.png" style="width:150px;"></div>
+  <div class="d-flex justify-content-center">
+    <div class="p-3"><a href="#">Notices</a></div>
+    <div class="p-3"><a href="#">Privacy policy</a></div>
+    <div class="p-3"><a href="#">Terms of use</a></div>
+  </div>
+</div>
+<div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
+</div>
+<script src="js/bootstrap.bundle.min.js" ></script>
+	
+	<script>
+	// Design By
+// - https://dribbble.com/shots/13992184-File-Uploader-Drag-Drop
+
+// Select Upload-Area
+const uploadArea = document.querySelector('#uploadArea');
+
+
+// Select Drop-Zoon Area
+const dropZoon = document.querySelector('#dropZoon');
+
+// Loading Text
+const loadingText = document.querySelector('#loadingText');
+
+// Slect File Input 
+const fileInput = document.querySelector('#fileInput');
+
+// Select Preview Image
+const previewImage = document.querySelector('#previewImage');
+
+// File-Details Area
+const fileDetails = document.querySelector('#fileDetails');
+
+// Uploaded File
+const uploadedFile = document.querySelector('#uploadedFile');
+
+// Uploaded File Info
+const uploadedFileInfo = document.querySelector('#uploadedFileInfo');
+
+// Uploaded File  Name
+const uploadedFileName = document.querySelector('.uploaded-file__name');
+
+// Uploaded File Icon
+const uploadedFileIconText = document.querySelector('.uploaded-file__icon-text');
+
+// Uploaded File Counter
+const uploadedFileCounter = document.querySelector('.uploaded-file__counter');
+
+// ToolTip Data
+const toolTipData = document.querySelector('.upload-area__tooltip-data');
+
+// Images Types
+const imagesTypes = [
+  "jpeg",
+  "png",
+  "svg",
+  "gif"
+];
+
+// Append Images Types Array Inisde Tooltip Data
+toolTipData.innerHTML = [...imagesTypes].join(', .');
+
+// When (drop-zoon) has (dragover) Event 
+dropZoon.addEventListener('dragover', function (event) {
+  // Prevent Default Behavior 
+  event.preventDefault();
+
+  // Add Class (drop-zoon--over) On (drop-zoon)
+  dropZoon.classList.add('drop-zoon--over');
+});
+
+// When (drop-zoon) has (dragleave) Event 
+dropZoon.addEventListener('dragleave', function (event) {
+  // Remove Class (drop-zoon--over) from (drop-zoon)
+  dropZoon.classList.remove('drop-zoon--over');
+});
+
+// When (drop-zoon) has (drop) Event 
+dropZoon.addEventListener('drop', function (event) {
+  // Prevent Default Behavior 
+  event.preventDefault();
+
+  // Remove Class (drop-zoon--over) from (drop-zoon)
+  dropZoon.classList.remove('drop-zoon--over');
+
+  // Select The Dropped File
+  const file = event.dataTransfer.files[0];
+
+  // Call Function uploadFile(), And Send To Her The Dropped File :)
+  uploadFile(file);
+});
+
+// When (drop-zoon) has (click) Event 
+dropZoon.addEventListener('click', function (event) {
+  // Click The (fileInput)
+  fileInput.click();
+});
+
+// When (fileInput) has (change) Event 
+fileInput.addEventListener('change', function (event) {
+  // Select The Chosen File
+  const file = event.target.files[0];
+
+  // Call Function uploadFile(), And Send To Her The Chosen File :)
+  uploadFile(file);
+});
+
+// Upload File Function
+function uploadFile(file) {
+  // FileReader()
+  const fileReader = new FileReader();
+  // File Type 
+  const fileType = file.type;
+  // File Size 
+  const fileSize = file.size;
+
+  // If File Is Passed from the (File Validation) Function
+  if (fileValidate(fileType, fileSize)) {
+    // Add Class (drop-zoon--Uploaded) on (drop-zoon)
+    dropZoon.classList.add('drop-zoon--Uploaded');
+
+    // Show Loading-text
+    loadingText.style.display = "block";
+    // Hide Preview Image
+    previewImage.style.display = 'none';
+
+    // Remove Class (uploaded-file--open) From (uploadedFile)
+    uploadedFile.classList.remove('uploaded-file--open');
+    // Remove Class (uploaded-file__info--active) from (uploadedFileInfo)
+    uploadedFileInfo.classList.remove('uploaded-file__info--active');
+
+    // After File Reader Loaded 
+    fileReader.addEventListener('load', function () {
+      // After Half Second 
+      setTimeout(function () {
+        // Add Class (upload-area--open) On (uploadArea)
+        uploadArea.classList.add('upload-area--open');
+
+        // Hide Loading-text (please-wait) Element
+        loadingText.style.display = "none";
+        // Show Preview Image
+        previewImage.style.display = 'block';
+
+        // Add Class (file-details--open) On (fileDetails)
+        fileDetails.classList.add('file-details--open');
+        // Add Class (uploaded-file--open) On (uploadedFile)
+        uploadedFile.classList.add('uploaded-file--open');
+        // Add Class (uploaded-file__info--active) On (uploadedFileInfo)
+        uploadedFileInfo.classList.add('uploaded-file__info--active');
+      }, 500); // 0.5s
+
+      // Add The (fileReader) Result Inside (previewImage) Source
+      previewImage.setAttribute('src', fileReader.result);
+
+      // Add File Name Inside Uploaded File Name
+      uploadedFileName.innerHTML = file.name;
+
+      // Call Function progressMove();
+      progressMove();
+    });
+
+    // Read (file) As Data Url 
+    fileReader.readAsDataURL(file);
+  } else { // Else
+
+    this; // (this) Represent The fileValidate(fileType, fileSize) Function
+
+  };
+};
+
+// Progress Counter Increase Function
+function progressMove() {
+  // Counter Start
+  let counter = 0;
+
+  // After 600ms 
+  setTimeout(() => {
+    // Every 100ms
+    let counterIncrease = setInterval(() => {
+      // If (counter) is equle 100 
+      if (counter === 100) {
+        // Stop (Counter Increase)
+        clearInterval(counterIncrease);
+      } else { // Else
+        // plus 10 on counter
+        counter = counter + 10;
+        // add (counter) vlaue inisde (uploadedFileCounter)
+        uploadedFileCounter.innerHTML = `${counter}%`
+      }
+    }, 100);
+  }, 600);
+};
+
+
+// Simple File Validate Function
+function fileValidate(fileType, fileSize) {
+  // File Type Validation
+  let isImage = imagesTypes.filter((type) => fileType.indexOf(`image/${type}`) !== -1);
+
+  // If The Uploaded File Type Is 'jpeg'
+  if (isImage[0] === 'jpeg') {
+    // Add Inisde (uploadedFileIconText) The (jpg) Value
+    uploadedFileIconText.innerHTML = 'jpg';
+  } else { // else
+    // Add Inisde (uploadedFileIconText) The Uploaded File Type 
+    uploadedFileIconText.innerHTML = isImage[0];
+  };
+
+  // If The Uploaded File Is An Image
+  if (isImage.length !== 0) {
+    // Check, If File Size Is 2MB or Less
+    if (fileSize <= 2000000) { // 2MB :)
+      return true;
+    } else { // Else File Size
+      return alert('Please Your File Should be 2 Megabytes or Less');
+    };
+  } else { // Else File Type 
+    return alert('Please make sure to upload An Image File Type');
+  };
+};
+
+// :)
+	
+	</script>
+	
+	
+</body>
+</html>
