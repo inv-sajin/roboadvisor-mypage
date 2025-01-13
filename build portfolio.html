@@ -86,87 +86,113 @@
   <div class="container">
     <div class="inner-container">
       <div class="breadcrumb_head fw-bold f-size16 mt-3 d-flex justify-content-between align-items-center">
-        <div class="f-size12 fw-normal"><a href="page2.html" class="linksclr"><i class="bi bi-chevron-left"></i>米国株</a>
-        </div>
+        <div class="f-size12 fw-normal"><a href="#" class="linksclr"><i class="bi bi-chevron-left"></i></a> 米国株</div>
         <div class="mx-auto">詳細</div>
+      </div>
+      <div class="row mt-3">
 
+        <div class="col-md-4 mb-3"><select class="form-select" aria-label="Default select example">
+            <option selected>Asset Class</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select></div>
+
+        <div class="col-md-4 mb-3"><select class="form-select" aria-label="Default select example">
+            <option selected>Country</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select></div>
+
+        <div class="col-md-4 mb-3"><select class="form-select" aria-label="Default select example">
+            <option selected>Theme</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select></div>
 
 
       </div>
 
-      <section>
 
-        <div class="d-flex justify-content-md-end align-items-center justify-content-between">
-          <div class="me-3">
-            <div class="f-size20">NASDAQ</div>
-            <div class="f-size12">評価額</div>
-          </div>
-          <div>
-            <div class="roboto-light f-size37 text-end">¥261,000</div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-12">
+          <div class="row">
+            <!-- Source List -->
+            <div class="col-md-5">
+              <div class="transfer-list" id="sourceList">
+                <div class="list-item" data-value="QQQ">US Growth LC (QQQ)</div>
+                <div class="list-item" data-value="VTV">US Value LC (VTV)</div>
+                <div class="list-item" data-value="EWJ">Japanese EQ (EWJ)</div>
+                <div class="list-item" data-value="EWZ">Brazilian EQ (EWZ)</div>
+              </div>
+            </div>
 
-            <div class="text-end f-size13"><a href="#" class="link-red">前日比：￥-868<img src="images/downred.svg"></a>
+            <!-- Transfer Buttons -->
+            <div class="col-md-2 d-flex justify-content-center">
+              <div class="transfer-buttons">
+                <button type="button" class="btn btn-purple line_button" id="moveRight" style="padding:5px 10px">
+                  <span style="position: relative; top:2px">Add</span>
+                  <img src="images/rightad.svg" style="width: 12px">
+                  <img src="images/rightadw.svg" class="hover-img" style="width: 12px">
+                </button>
+                <button type="button" class="btn btn-purple line_buttons2" id="moveRight" style="padding:5px 10px">
+
+                  <img src="images/leftar.svg" style="width: 12px">
+                  <img src="images/leftarw.svg" class="hover-img" style="width: 12px"><span
+                    style="position: relative; top:2px">Remove</span>
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Target List -->
+            <div class="col-md-5">
+              <div class="transfer-list" id="targetList">
+                <div class="list-item" data-value="EWU">UK EQ (EWU) <span class="float-end">13%</span></div>
+                <div class="list-item" data-value="TLT">US Treas (TLT) <span class="float-end">5%</span></div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-      </section>
+      <div class="row mt-3">
+        <div class="col-md-12">You can choose the allocations to ETFs or let us choose them for you:</div>
 
-      <section>
-        <div class="text-end">
-          <div class="dropdown"> <a class="btn btn-link dropdown-toggle btns-link" href="#" role="button"
-              id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> 全期間 </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Option 1</a></li>
-              <li><a class="dropdown-item" href="#">Option 2</a></li>
-              <li><a class="dropdown-item" href="#">Option 3</a></li>
-            </ul>
+      </div>
+      <div class="row mt-4">
+
+        <div class="col-md-6 ">
+          <div class="d-flex align-items-center">
+
+            <div>Target risk level:</div>
+            <div class="ms-2"><select class="form-select" id="specificSizeSelect">
+                <option selected>Mid</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select></div>
+
           </div>
+
         </div>
-        <div class="text-center inner_sec_img2"><img src="images/asset-chart2.jpg" style="width:100%"></div>
 
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between mt-4 mb-4 align-items-center f-size16">
-            <div><span class="f-size16 ">評価損益</span></div>
-            <div class="text-end project_text">¥91,000
-              <div class="smalltext-info-big">評価損益率：34.86%</div>
-            </div>
+        <div class="col-md-6">
+
+          <div class="mb-5 text-end">
+            <button type="button" class="btn btn-primary btn-purple">Optimize</button>
           </div>
-        </a> <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16  mt-4 mb-4 align-items-center">
-            <div><span>取得価額</span></div>
-            <div class="text-end">¥170,000
 
-            </div>
-          </div>
-        </a>
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-            <div></span><span>平均取得単価</span></div>
-            <div class="text-end">¥15,736
 
-            </div>
-          </div>
-        </a>
+        </div>
 
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-            <div></span><span>基準価額</span></div>
-            <div class="text-end">¥24,159
 
-            </div>
-          </div>
-        </a>
+      </div>
 
-        <a href="#" class="alink">
-          <div class="inner_section justify-content-between f-size16 mt-4 mb-4 align-items-center">
-            <div></span><span>保有数</span></div>
-            <div class="text-end">10.8032
 
-            </div>
-          </div>
-        </a>
 
-      </section>
     </div>
   </div>
   <footer class="mt-auto">
@@ -180,8 +206,46 @@
     </div>
     <div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
     </div>
-
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const sourceList = document.getElementById('sourceList');
+        const targetList = document.getElementById('targetList');
+        const moveRightBtn = document.getElementById('moveRight');
+        const moveLeftBtn = document.getElementById('moveLeft');
+
+        // Toggle selection on item click
+        function addClickHandlers(container) {
+          container.addEventListener('click', function (e) {
+            if (e.target.classList.contains('list-item')) {
+              e.target.classList.toggle('selected');
+            }
+          });
+        }
+
+        addClickHandlers(sourceList);
+        addClickHandlers(targetList);
+
+        // Move selected items right
+        moveRightBtn.addEventListener('click', function () {
+          const selectedItems = sourceList.querySelectorAll('.selected');
+          selectedItems.forEach(item => {
+            targetList.appendChild(item);
+            item.classList.remove('selected');
+          });
+        });
+
+        // Move selected items left
+        moveLeftBtn.addEventListener('click', function () {
+          const selectedItems = targetList.querySelectorAll('.selected');
+          selectedItems.forEach(item => {
+            sourceList.appendChild(item);
+            item.classList.remove('selected');
+          });
+        });
+      });
+    </script>
+
 </body>
 
 </html>
