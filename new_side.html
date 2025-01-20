@@ -39,7 +39,7 @@
             </ul>
 
             <!-- Right Side Menu Items -->
-             <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
+            <ul class="navbar-nav f-size17 roboto-medium menu-shadow ">
               <li class="nav-item px-3"> <a class="nav-link" href="index.html">ホーム</a> </li>
               <li class="nav-item dropdown px-3"> <a class="nav-link dropdown-toggle" href="#"
                   id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 入出金 </a>
@@ -57,7 +57,7 @@
                   その他
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                 <li><a class="dropdown-item" href="other menu list.html">お客様情報</a></li>
+                  <li><a class="dropdown-item" href="other menu list.html">お客様情報</a></li>
                   <li><a class="dropdown-item" href="other menu list 2.html">運用報告書類</a></li>
                   <li><a class="dropdown-item" href="#">サービスの利用に関して</a></li>
                   <li><a class="dropdown-item" href="#">お客様サポート</a></li>
@@ -86,157 +86,135 @@
   <div class="container">
     <div class="inner-container">
       <div class="breadcrumb_head fw-bold f-size16 mt-3 d-flex justify-content-between align-items-center">
-        <div class="f-size12 fw-normal"><a href="portfolio1-2.html" class="linksclr"><i
-              class="bi bi-chevron-left"></i>ゴール一覧</a></div>
-        <div class="mx-auto">ゴールを新規追加</div>
+        <a href="portfolio1-2.html" class="linksclr">
+          <div class="f-size12 fw-normal"><i class="bi bi-chevron-left"></i> サイドリスト </div>
+        </a>
+        <div class="mx-auto">サイドポートフォリオ</div>
       </div>
-      <div class="colum_size mt-3 m-auto">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14 linksclr">目的</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="自宅購入の頭金">
+      <div class="row mt-3">
+
+        <div class="col-md-4 mb-3">
+          <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14 linksclr">Name</label>
+          <input type="text" class="form-control" placeholder="Name">
         </div>
-        <div class="mb-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14">目標金額（円）</label>
-            </div>
-            <div>
-              <label for="exampleFormControlInput1" class="form-label f-size12"><a href="#" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal" class="alink"><img src="images/arrow.svg"> 計算ヘルプ</a></label>
-            </div>
-          </div>
 
-          <!--Modal start-->
+        <div class="col-md-4 mb-3">
+          <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14 linksclr">Initial Investment</label>
+          <input type="text" class="form-control" placeholder="Initial Investment">  
+        </div>
 
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header text-center">
-                  <h5 class="modal-title fw-bold" id="exampleModalLabel">計算ヘルプ</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" style="max-height: 600px; overflow: auto">
-                  <div class="text-center">目標金額を達成するには？</div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1"
-                      class="form-label purple_text fw-bold f-size14 ">目標金額（円）</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="7,000,000">
-                    <div class="f-size12" style="color:#999">現在の設定：7,000,000</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14 ">到達時期</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2026/10/1">
-                    <div class="f-size12" style="color:#999">現在の設定：2026/10/1</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1"
-                      class="form-label purple_text fw-bold f-size14 ">月次積立金額（円）</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="30,000">
-                    <div class="f-size12" style="color:#999">現在の設定：30,000</div>
-                  </div>
-                  <div class="mt-5 mb-5 text-center">
-                    <button type="button" class="btn btn-primary btn-purple" style="width: 200px;">シミュレーション</button>
-                  </div>
-                  <div><img src="images/asset-chart10.jpg" class="w-100"></div>
-                  <div class="text-center f-size16 mt-3">今後 3 万円の積立を継続した場合 <span
-                      class="purple_text fw-bold">90％</span>の確率で<span class="purple_text fw-bold">633</span>万円</div>
-                </div>
+        <div class="col-md-4 mb-3">
+          <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14 linksclr">Monthly Contribution</label>
+          <input type="text" class="form-control" placeholder="Monthly Contribution">  
+        </div>
+
+
+      </div>
+
+      <div class="row mt-3">
+
+        <div class="col-md-4 mb-3"><select class="form-select" aria-label="Default select example">
+            <option selected>Asset Class</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select></div>
+
+        <div class="col-md-4 mb-3"><select class="form-select" aria-label="Default select example">
+            <option selected>Country</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select></div>
+
+        <div class="col-md-4 mb-3"><select class="form-select" aria-label="Default select example">
+            <option selected>Theme</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select></div>
+
+
+      </div>
+
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-12">
+          <div class="row">
+            <!-- Source List -->
+            <div class="col-md-5">
+              <div class="transfer-list" id="sourceList">
+                <div class="list-item" data-value="QQQ">US Growth LC (QQQ)</div>
+                <div class="list-item" data-value="VTV">US Value LC (VTV)</div>
+                <div class="list-item" data-value="EWJ">Japanese EQ (EWJ)</div>
+                <div class="list-item" data-value="EWZ">Brazilian EQ (EWZ)</div>
+              </div>
+            </div>
+
+            <!-- Transfer Buttons -->
+            <div class="col-md-2 d-flex justify-content-center">
+              <div class="transfer-buttons">
+                <button type="button" class="btn btn-purple line_button" id="moveRight" style="padding:5px 10px">
+                  <span style="position: relative; top:2px">Add</span>
+                  <img src="images/rightad.svg" style="width: 12px">
+                  <img src="images/rightadw.svg" class="hover-img" style="width: 12px">
+                </button>
+                <button type="button" class="btn btn-purple line_buttons2" id="moveRight" style="padding:5px 10px">
+
+                  <img src="images/leftar.svg" style="width: 12px">
+                  <img src="images/leftarw.svg" class="hover-img" style="width: 12px"><span
+                    style="position: relative; top:2px">Remove</span>
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Target List -->
+            <div class="col-md-5">
+              <div class="transfer-list" id="targetList">
+                <div class="list-item" data-value="EWU">UK EQ (EWU) <span class="float-end">13%</span></div>
+                <div class="list-item" data-value="TLT">US Treas (TLT) <span class="float-end">5%</span></div>
               </div>
             </div>
           </div>
-
-          <!--Modal end-->
-
-          <div>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="7,000,000">
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14">目標金額（円）</label>
-            </div>
-            <div>
-              <label for="exampleFormControlInput1" class="form-label f-size12"><img src="images/arrow.svg">
-                計算ヘルプ</label>
-            </div>
-          </div>
-          <div>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="7,000,000">
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="purple_text fw-bold f-size14">投資種別の選択</div>
-          <div class="form-check  mt-3" style="padding-left: 10px;">
-            <input type="radio" id="radio1" name="customRadio" class="custom-radio-input" />
-            <label for="radio1" class="custom-radio-label"><span
-                style="position:absolute; left: 30px; width: 200px; top:-3px;">目的到達優先</span></label>
-          </div>
-          <div class="form-check mt-3" style="padding-left: 10px;">
-            <input type="radio" id="radio2" name="customRadio" class="custom-radio-input" checked />
-            <label for="radio2" class="custom-radio-label"><span
-                style="position:absolute; left: 30px; width: 200px; top:-3px;">損失回避優先</span></label>
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14">月次積立金額（円）</label>
-            </div>
-            <div>
-              <label for="exampleFormControlInput1" class="form-label f-size12"><img src="images/arrow.svg">
-                計算ヘルプ</label>
-            </div>
-          </div>
-          <div>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="30,000">
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14">当初開始金額</label>
-            </div>
-            <div>
-              <label for="exampleFormControlInput1" class="form-label f-size12"><img src="images/arrow.svg">
-                計算ヘルプ</label>
-            </div>
-          </div>
-          <div>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1,000,000">
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14">テーマ（オプショナル）</label>
-            </div>
-          </div>
-          <div>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>ESG関連</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="d-flex justify-content-between">
-            <div>
-              <label for="exampleFormControlInput1" class="form-label purple_text fw-bold f-size14">ゴール名</label>
-            </div>
-          </div>
-          <div>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="自宅購入の頭金">
-          </div>
-          <div class="mt-5 mb-5 text-center">
-            <a href="forecast_side.html"><button type="button" class="btn btn-primary btn-purple"
-                style="width: 200px;">シミュレーション</button></a>
-          </div>
         </div>
       </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">You can choose the allocations to ETFs or let us choose them for you:</div>
+
+      </div>
+      <div class="row mt-4">
+
+        <div class="col-md-6 ">
+          <div class="d-flex align-items-center">
+
+            <div>Target risk level:</div>
+            <div class="ms-2"><select class="form-select" id="specificSizeSelect">
+                <option selected>Mid</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select></div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="mb-5 text-end">
+            <a href="forecast_side.html"><button type="button" class="btn btn-primary btn-purple">Optimize</button></a>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
     </div>
   </div>
   <footer class="mt-auto">
@@ -251,6 +229,45 @@
     <div class="footer-brdr pt-2 pb-2">ⓒ 2024 websitename.com</div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const sourceList = document.getElementById('sourceList');
+        const targetList = document.getElementById('targetList');
+        const moveRightBtn = document.getElementById('moveRight');
+        const moveLeftBtn = document.getElementById('moveLeft');
+
+        // Toggle selection on item click
+        function addClickHandlers(container) {
+          container.addEventListener('click', function (e) {
+            if (e.target.classList.contains('list-item')) {
+              e.target.classList.toggle('selected');
+            }
+          });
+        }
+
+        addClickHandlers(sourceList);
+        addClickHandlers(targetList);
+
+        // Move selected items right
+        moveRightBtn.addEventListener('click', function () {
+          const selectedItems = sourceList.querySelectorAll('.selected');
+          selectedItems.forEach(item => {
+            targetList.appendChild(item);
+            item.classList.remove('selected');
+          });
+        });
+
+        // Move selected items left
+        moveLeftBtn.addEventListener('click', function () {
+          const selectedItems = targetList.querySelectorAll('.selected');
+          selectedItems.forEach(item => {
+            sourceList.appendChild(item);
+            item.classList.remove('selected');
+          });
+        });
+      });
+    </script>
+
 </body>
 
 </html>
