@@ -164,7 +164,7 @@ body {
 .login_screen {
   width: 500px;
   max-width: 500px;
-  border: 1px solid #d9d9d9;
+  /* border: 1px solid #d9d9d9; */
   border-radius: 15px;
 }
 .register_screen {
@@ -1360,3 +1360,11 @@ button:hover {
   }
 }
 
+@media (max-width: 993px) {
+  .mobile-padding {
+    padding-top: 6rem;
+  }
+  .text-end{
+    text-align: center !important;
+  }
+}
